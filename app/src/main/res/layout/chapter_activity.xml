@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ChapterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#808090">
+        <ImageView
+            android:id="@+id/imgAnhTruyens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/txvTenTruyens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B4000000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140dp"
+            android:padding="8dp"
+            android:text="Ten Truyen"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:letterSpacing="0.05"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_chap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_back"/>
+</LinearLayout>

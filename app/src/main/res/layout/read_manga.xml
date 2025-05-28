@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Nút lùi chương -->
+        <Button
+            android:id="@+id/prev_chap"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/back" />
+
+        <!-- Tên chương -->
+        <TextView
+            android:id="@+id/ten_chap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="chuong 123"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Nút tới chương -->
+        <Button
+            android:id="@+id/next_chap"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/front" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imgAnh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:clipToPadding="false"
+        android:clipChildren="false" />
+</LinearLayout>

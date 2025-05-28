@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/material_dynamic_neutral20"
+    android:orientation="vertical"
+    tools:context=".MainPage">
+
+    <!-- Thanh tìm kiếm -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#363F50"
+        android:gravity="center_vertical">  <!-- Căn giữa theo chiều dọc -->
+
+        <!-- Biểu tượng tìm kiếm -->
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/search" />
+
+        <!-- Ô nhập liệu tìm kiếm -->
+        <EditText
+            android:id="@+id/editTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search_text"
+            android:gravity="center"
+            android:hint="Search story"
+            android:textColor="#fff"
+            android:textColorHint="#B3ADAD"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- GridView để hiển thị các mục -->
+    <GridView
+        android:id="@+id/gdvDSTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/first_page"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/point"
+            android:gravity="center"
+            android:text="&lt;&lt;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/prev_page"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/point"
+            android:gravity="center"
+            android:text="&lt;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/page_1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/page_selected"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/page_2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/page_unselected"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/page_3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/page_unselected"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/page_4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/page_unselected"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/page_5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/page_unselected"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/next_page"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/point"
+            android:gravity="center"
+            android:text="&gt;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_page"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/point"
+            android:gravity="center"
+            android:text="&gt;&gt;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
