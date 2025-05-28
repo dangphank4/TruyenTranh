@@ -18,8 +18,8 @@ Giao diện: XML
 
 Cài đặt
 Với Android
-# Clone dự án
-git clone https://github.com/phandangk4/TruyenTranh.git
+# Clone dự án[
+git clone https://github.com/dangphank4/TruyenTranh.git
 cd TruyenTranh
 
 # Mở bằng Android Studio và chạy trên thiết bị ảo/thật
